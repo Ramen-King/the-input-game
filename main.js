@@ -32,16 +32,16 @@ let countries = [
     'Mexico'];
 
 
-let japan = 1;
-let denmark = 2;
-let poland = 3;
-let germany = 4;
-let malta = 5;
-let america = 6;
-let china = 7;
-let korea = 8;
-let vietnam = 9;
-let mexico = 10;
+//let japan = 1;
+//let denmark = 2;
+//let poland = 3;
+//let germany = 4;
+//let malta = 5;
+//let america = 6;
+//let china = 7;
+//let korea = 8;
+//let vietnam = 9;
+//let mexico = 10;
 
 function init() {
     // Make sure we're dealing with a clean slate.
@@ -141,7 +141,14 @@ function handleUserInput5(event) {
 }
 
 function printResult() {
-     result = 'Unlocked' 
+
+     country1 = countries[0]
+     country2 = countries[1]
+     country3 = countries[3]
+     country4 = countries[4]
+     country5 = countries[2]
+
+
      console.log(result);
      document.querySelector('#result').innerText = result;
 }
