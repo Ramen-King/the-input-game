@@ -1,10 +1,10 @@
 // Global variables ftw
 
-let country1 = '';
-let country2 = '';
-let country3 = '';
-let country4 = '';
-let country5 = '';
+let userInput1 = '';
+let userInput2 = '';
+let userInput3 = '';
+let userInput4 = '';
+let userInput5 = '';
 let result = '';
 let switched = false;
 let heading = 'Unlock Me'; // What should the heading start out as?
@@ -141,13 +141,15 @@ function handleUserInput5(event) {
 }
 
 function printResult() {
-
-     country1 = countries[0]
-     country2 = countries[1]
-     country3 = countries[3]
+    
+     country1 = countries[0] 
+     country2 = countries[1] 
+     country3 = countries[3] 
      country4 = countries[4]
      country5 = countries[2]
 
+     result = country1? (country2?(country3?)country4?)
+    
 
      console.log(result);
      document.querySelector('#result').innerText = result;
