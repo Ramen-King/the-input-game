@@ -7,7 +7,7 @@ let country2 = '';
 let country3 = '';
 let country4 = '';
 let country5 = '';
-let result = '';
+let result = ['Denied', 'Approved'];
 let switched = false;
 let heading = 'Unlock Me'; // What should the heading start out as?
 
@@ -105,8 +105,7 @@ function handleUserInput1(event) {
     if (country1 === countries[0]){
         printResult();
     } else {
-        
-        
+        printResult2()
     }
     
     console.log(country1)
@@ -115,27 +114,52 @@ function handleUserInput1(event) {
 function handleUserInput2(event) {
     let userInput = event.target.value;
     country2 = userInput ;
+    if (country2 === countries[5]){
+        printResult();
+    } else {
+        printResult2()
+    }
     console.log(country2);
 }
 
 function handleUserInput3(event) {
     let userInput = event.target.value;
     country3 = userInput;
+    if (country3 === countries[6]){
+        printResult();
+    } else {
+        printResult2()
+    }
     console.log(country3);
 }   
 function handleUserInput4(event) {
     let userInput = event.target.value;
     country4 = userInput;
+    if (country4 === countries[2]){
+        printResult();
+    } else {
+        printResult2()
+    }
     console.log(country4);
 } 
 function handleUserInput5(event) {
     let userInput = event.target.value;
     country5 = userInput;
-    
+    if (country5 === countries[9]){
+        printResult();
+    } else {
+        printResult(2);
+    }
 }
 
 function printResult() {
-     result = "Approved";
+     result = "Approved"
+     console.log(result)
      document.querySelector('#result').innerText = result;
 }
 
+function printResult2() {
+    result = "Denied";
+    console.log(result)
+    document.querySelector('#result').innerText = result;
+}
