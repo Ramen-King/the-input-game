@@ -7,7 +7,7 @@ let country2 = '';
 let country3 = '';
 let country4 = '';
 let country5 = '';
-let result = ['Denied', 'Approved'];
+let result = '';
 let switched = false;
 let heading = 'Unlock Me'; // What should the heading start out as?
 
@@ -107,7 +107,6 @@ function handleUserInput1(event) {
     } else {
         printResult2()
     }
-    
     console.log(country1)
 }
 
@@ -150,6 +149,7 @@ function handleUserInput5(event) {
     } else {
         printResult(2);
     }
+    console.log(country5)
 }
 
 function printResult() {
